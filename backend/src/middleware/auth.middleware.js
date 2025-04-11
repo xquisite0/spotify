@@ -21,5 +21,7 @@ export const requireAdmin = async (req, res, next) => {
         .json({ message: "Forbidden - you do not have admin access" });
     }
     next();
-  } catch (error) {}
+  } catch (error) {
+    return res.status(500).json({ message: "Internal Server Error" }, error);
+  }
 };
