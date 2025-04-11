@@ -4,8 +4,8 @@ import {
   getFeaturedSongs,
   getMadeForYouSongs,
   getTrendingSongs,
-} from "../controllers/song.controller.js";
-import { protectRoute, requireAdmin } from "../middlewares/auth.middleware.js";
+} from "../controller/song.controller.js";
+import { protectRoute, requireAdmin } from "../middleware/auth.middleware.js";
 
 const router = Router();
 
